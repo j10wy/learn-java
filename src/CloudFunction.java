@@ -8,9 +8,8 @@ import java.io.BufferedWriter;
 public class Example implements HttpFunction {
 	@Override
 	public void service(HttpRequest request, HttpResponse response) throws Exception {
-		int age = 38;
-		String name = "Jeff";
 		BufferedWriter writer = response.getWriter();
-		writer.write("G'day, Mate! Jeez, " + name + ", are you really " + age + " ?");
+		writer.write(
+				"<html><head><title>test</title></head><body><img src='https://i1.sndcdn.com/avatars-000689822399-n8zm5q-t240x240.jpg'/></body></html>");
 	}
 }
