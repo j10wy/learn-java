@@ -21,11 +21,16 @@ class App {
         Animal jeff = new Animal("Jeff", 38);
         Animal vanessa = new Animal("Vanessa", 35);
         Animal kali = new Animal("Kali", 10);
-        Animal chico = new Animal("Chico", 14);
-        Animal[] names = { jeff, vanessa, kali, chico };
+        Animal[] names = { jeff, vanessa, kali };
+
+        int i = 0;
+
+        while (i < names.length) {
+            System.out.println("index: " + i + " | name: " + names[i].name);
+            i = i + 1;
+        }
+
         System.out.println(names[0].name + " lives with " + names[1].name + " and " + names[2].name);
-        System.out.println("The " + names.length + " of them live in California.");
-        System.out.println("RIP my guy, " + names[3].name);
     }
 }
 
