@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 // Primitive types
-class Main {
+class App {
     public static void main(String[] args) {
         int studentAge = 15;
         System.out.println("Current age is " + studentAge + ". What's the new age?");
