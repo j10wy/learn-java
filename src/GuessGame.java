@@ -15,6 +15,13 @@ class Player {
 }
 
 class Game {
+	String wut;
+
+	public Game() {
+		this.wut = "Hey!";
+		System.out.println(this.wut + " I am called from the constructor");
+	}
+
 	public void start() {
 		int numTries = 1;
 		Player p1 = new Player();
