@@ -5,7 +5,6 @@ public class GuessGame {
 	}
 }
 
-
 class Player {
 	int number = 0;
 
